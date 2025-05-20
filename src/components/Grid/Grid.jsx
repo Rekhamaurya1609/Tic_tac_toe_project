@@ -2,6 +2,7 @@ import { useState } from "react";
 import Card from "../Card/Card";
 import isWinner from '../../helpers/checkWinner';
 import './Grid.css';
+import Confetti from 'react-confetti';
 
 function Grid({ numberOfCards}) {
     const [board, setBoard] = useState(Array(numberOfCards).fill(""));
@@ -30,6 +31,7 @@ function Grid({ numberOfCards}) {
     return (
 
         <div className="grid-wrapper">
+            {winner && <Confetti/>}
             {
                 winner && (
                     <>

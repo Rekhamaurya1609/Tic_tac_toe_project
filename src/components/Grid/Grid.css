@@ -1,10 +1,15 @@
+.grid-wrapper{
+    text-align: center;
+}
+
 .grid {
    height: 400px;
    width: 400px;
    display: flex;
    flex-wrap: wrap;
    justify-content: space-between;
-   align-items: center;
+   align-items: center; 
+   margin: auto;
 }
 
 .turn-highlight {
